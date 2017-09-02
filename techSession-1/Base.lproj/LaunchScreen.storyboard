@@ -1,7 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,12 +18,38 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fpV-2h-cdm" userLabel="Inner View">
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="GI GI.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hOX-2P-IWN">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="69" id="2hT-wz-6AU"/>
+                                            <constraint firstAttribute="width" constant="375" id="ijM-zm-HbC"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72336632013320923" green="0.28111113570910973" blue="0.25095770768570352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hOX-2P-IWN" firstAttribute="top" secondItem="fpV-2h-cdm" secondAttribute="top" constant="260" id="Jlk-cs-EIS"/>
+                                    <constraint firstItem="hOX-2P-IWN" firstAttribute="centerX" secondItem="fpV-2h-cdm" secondAttribute="centerX" id="pi7-Ds-g7s"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fpV-2h-cdm" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="64m-Vy-kav"/>
+                            <constraint firstItem="fpV-2h-cdm" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-16" id="LX7-8C-soo"/>
+                            <constraint firstItem="fpV-2h-cdm" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eAF-bl-uwJ"/>
+                            <constraint firstItem="fpV-2h-cdm" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="lgC-RY-4fn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="61.600000000000001" y="375.56221889055473"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="GI GI.jpg" width="378" height="69"/>
+    </resources>
 </document>
